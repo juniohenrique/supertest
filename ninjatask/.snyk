@@ -1,0 +1,31 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:extend:20180424':
+    - sqlite3 > node-pre-gyp > request > extend:
+        patched: '2019-07-04T13:30:42.232Z'
+  'npm:hoek:20180212':
+    - sqlite3 > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2019-07-04T13:30:42.232Z'
+    - passport-jwt > jsonwebtoken > joi > hoek:
+        patched: '2019-07-04T13:30:42.232Z'
+    - sqlite3 > node-pre-gyp > hawk > hoek:
+        patched: '2019-07-04T13:30:42.232Z'
+    - passport-jwt > jsonwebtoken > joi > topo > hoek:
+        patched: '2019-07-04T13:30:42.232Z'
+    - sqlite3 > node-pre-gyp > hawk > boom > hoek:
+        patched: '2019-07-04T13:30:42.232Z'
+    - sqlite3 > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2019-07-04T13:30:42.232Z'
+  'npm:moment:20170905':
+    - sequelize > moment:
+        patched: '2019-07-04T13:30:42.232Z'
+    - sequelize > moment-timezone > moment:
+        patched: '2019-07-04T13:30:42.232Z'
+    - passport-jwt > jsonwebtoken > joi > moment:
+        patched: '2019-07-04T13:30:42.232Z'
+  'npm:stringstream:20180511':
+    - sqlite3 > node-pre-gyp > request > stringstream:
+        patched: '2019-07-04T13:30:42.232Z'
